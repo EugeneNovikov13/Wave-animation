@@ -1,13 +1,30 @@
 body {
+    margin: 0;
+}
+
+.start-button {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 60px;
+    height: 21px;
+    border: 1px solid #F0D070;
+    border-radius: 3px;
+    background-color: #8D150E;
+}
+
+.animation {
     display: flex;
     width: 100vw;
     height: 100vh;
+    padding: 0;
+    margin: 0;
     justify-content: center;
     align-items: center;
     background: #252525;
 }
 
-.search-animation_top-line {
+.animation-line {
     position: absolute;
     width: 485px;
     height: 30px;
@@ -15,18 +32,15 @@ body {
     justify-content: space-between;
 }
 
-.search-animation_bottom-line {
+.animation-line.bottom {
     position: relative;
-    width: 485px;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
     top: 18px;
     left: 18px;
 }
 
-.search-animation__rhomb {
+.animation-line .rhombus {
     position: relative;
+    top: 0;
     width: 21px;
     height: 21px;
     transform: rotate(45deg);
